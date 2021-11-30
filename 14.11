@@ -5,7 +5,7 @@ def selection_sort_descend_trace(list):
                 swap = list[i]
                 list[i] = list[integer]
                 list[integer] = swap
-        print(*list, sep=' ')
+        print(*list,'', sep=' ')
 
 
 
