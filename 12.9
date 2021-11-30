@@ -1,0 +1,15 @@
+parts = input().split()
+name = parts[0]
+while name != '-1':
+    try:
+        if parts[1].isdigit() == False:
+            raise ValueError('0')
+        age = int(parts[1]) + 1
+    except ValueError as err:
+        age = err
+
+    print('{} {}'.format(name, age))
+
+    # Get next line
+    parts = input().split()
+    name = parts[0]
