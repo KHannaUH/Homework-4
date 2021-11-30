@@ -1,0 +1,15 @@
+def selection_sort_descend_trace(list):
+    for integer in range(len(list)-1):
+        for i in range(integer+1,len(list)):
+            if list[integer] < list[i]:
+                swap = list[i]
+                list[i] = list[integer]
+                list[integer] = swap
+        print(*list, sep=' ')
+
+
+
+
+if __name__ == '__main__':
+    list = list(map(int,input().strip().split()))
+    selection_sort_descend_trace(list)
