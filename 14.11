@@ -1,12 +1,16 @@
+#Name : Karim Hanna Student ID: 1969165
 def selection_sort_descend_trace(list):
-    for integer in range(len(list)-1):
-        for i in range(integer+1,len(list)):
-            if list[integer] < list[i]:
-                swap = list[i]
-                list[i] = list[integer]
-                list[integer] = swap
+    for integer in range(len(list) - 1):
+        largest = integer
+        for i in range(integer + 1, len(list)):
+            if list[largest]< list[i]:
+                largest = i
+        swap =list[largest]
+        swap1 =list[integer]
+        list[integer] = swap
+        list[largest] = swap1
         print(*list,'', sep=' ')
-
+    return list
 
 
 
